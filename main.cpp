@@ -24,9 +24,7 @@ int main() {
         piramid.push_back(piramid_line);
 	}
 	piramid[0][1] = 1;
-	for (int i; i < h; i++){
-		piramid[i][i] = 1;
-	}
+	piramid[1][1] = 1;
 	
 	for (int y = 1 ; y < h; y++){
 		for (int x = 1; x < (h + 2); x++)
@@ -46,12 +44,9 @@ int main() {
 		            cout << i;
 		        }
 		    }
-			
 	    }
 	    cout << endl;
 	}
-	
-	
 	
 	system("pause");
 	return 0;
